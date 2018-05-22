@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+        <receiver android:enabled="true" android:name=".MyAlarmReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+        </receiver>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
